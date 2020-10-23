@@ -6,6 +6,7 @@ class Body extends StatelessWidget{
     Size size = MediaQuery.of(context)
     .size;   //  This size provide us total height and width of our screen
     return Container(
+      //We will Extract Widget here of Container Class
       height: size.height,
       width: double.infinity,
       child: Stack(

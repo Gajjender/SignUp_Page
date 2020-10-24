@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:SignUp_Page/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:SignUp_Page/Screens/Welcome/components/background.dart';

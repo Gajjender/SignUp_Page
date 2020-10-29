@@ -1,6 +1,8 @@
-import 'package:SignUp_Page/constants.dart';
-import 'package:flutter/material.dart';
 import 'package:SignUp_Page/Screens/Welcome/components/background.dart';
+import 'package:SignUp_Page/components/rounded_button.dart';
+import 'package:SignUp_Page/constants.dart';
+//import 'package:SignUp_Page/constants.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class Body extends StatelessWidget{
@@ -16,26 +18,24 @@ class Body extends StatelessWidget{
             "WELCOME TO EDU",
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
+          SizedBox(height: size.height * 0.03),
           SvgPicture.asset("assets/icons/chat.svg",
           height: size.height*0.45,
           ),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(29),
-            child: FlatButton(
-              padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-              color: kPrimaryColor,
-              onPressed: (){}, 
-              child: Text(
-                "LOGIN",
-                style: TextStyle(color: Colors.white),
-              ),
-            ),
+          SizedBox(height: size.height * 0.05),
+          RoundedButton(
+            text: "LOGIN",
+            press: (){},
           ),
-          //Code ends at ClipRRect 
+          RoundedButton(
+            text: "LOGIN",
+            color: kPrimaryLightColor,
+            textColor: Colors.black,
+            press: (){},
+          ),
         ],
       ),
     );
   }
-}
-
-
+}  
+  
